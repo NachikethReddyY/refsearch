@@ -1,13 +1,11 @@
-# Unduck
+# Ref Search
 
-DuckDuckGo's bang redirects are too slow. Add the following URL as a custom search engine to your browser. Enables all of DuckDuckGo's bangs to work, but much faster.
+Ref Search is forked from [Unduck by T3-Content](https://github.com/T3-Content/unduck). Add the following URL as a custom search engine in your browser to use DuckDuckGo's bangs with client-side redirects.
 
 ```
-https://unduck.link?q=%s
+https://refsearch.pages.dev?q=%s
 ```
 
-## How is it that much faster?
+## How it works
 
-DuckDuckGo does their redirects server side. Their DNS is...not always great. Result is that it often takes ages.
-
-I solved this by doing all of the work client side. Once you've went to https://unduck.link once, the JS is all cache'd and will never need to be downloaded again. Your device does the redirects, not me.
+Ref Search resolves bangs in your browser and redirects you to the selected search site. Ordinary searches use Google Web results; an explicit `!g` bang uses standard Google results.
